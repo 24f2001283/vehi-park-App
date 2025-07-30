@@ -35,7 +35,7 @@ Ensure Python 3.x is installed.
 1. **Clone the repository:**  
    ```bash
    git clone https://github.com/24f2001283/vehi-park-App.git
-   cd vehi-park-app
+   cd vehi-park-app/vehi_park_app_24f2001283
    ```
 
 2. **Set up a virtual environment:**  
