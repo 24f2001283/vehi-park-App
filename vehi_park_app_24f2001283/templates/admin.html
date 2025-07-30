@@ -1,0 +1,41 @@
+<!-- templates/admin.html -->
+{% extends 'base.html' %}
+
+{% block title %}Admin Dashboard{% endblock %}
+
+{% block content %}
+<h1 class="text-center text-primary mb-4">Hello Admin</h1>
+
+<form method="get" action="{{ url_for('admin_search') }}" class="d-flex justify-content-center mb-4" style="gap: 10px;">
+  <input type="text" name="query" placeholder="Search..." required class="form-control w-50">
+  <button type="submit" class="btn btn-primary">Search</button>
+</form>
+
+<div class="container" style="max-width: 600px;">
+  <div class="border p-3 mb-3">
+    <h3>Manage Parking</h3>
+    <p>Add, Update, Delete parking</p>
+    <div class="text-end">
+      <a href="/parking" class="btn btn-secondary btn-sm">Go →</a>
+    </div>
+  </div>
+
+  <div class="border p-3 mb-3">
+    <h3>Manage Users</h3>
+    <p>Add, Update, Delete users</p>
+    <div class="text-end">
+      <a href="/admin_user" class="btn btn-secondary btn-sm">Go →</a>
+    </div>
+  </div>
+
+  <div class="border p-3">
+    <h3>Summary</h3>
+    <p>Summary of parking and users</p>
+    <div class="text-end">
+      <a href="/admin/summary" class="btn btn-secondary btn-sm">Go →</a>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
